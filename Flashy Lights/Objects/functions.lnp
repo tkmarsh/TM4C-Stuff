@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 --cpu=Cortex-M4.fp
 ".\objects\main.o"
 ".\objects\delay.o"
@@ -5,4 +6,13 @@
 --strict --scatter ".\Objects\functions.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
+=======
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\startup.o"
+--strict --scatter ".\Objects\functions.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+>>>>>>> ff37b92edd34908db2a08032ee9482c64bbe8f45
 --list ".\Listings\functions.map" -o .\Objects\functions.axf

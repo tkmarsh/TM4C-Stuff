@@ -14,7 +14,11 @@ int main()
 		
 		while(1){
 			for(int i=0; i<2; i++){
+<<<<<<< HEAD
 				GPIO_PORTF_DATA_R=BLUE;
+=======
+				GPIO_PORTF_DATA_R=GREEN|BLUE;
+>>>>>>> ff37b92edd34908db2a08032ee9482c64bbe8f45
 				delay(250000);
 				GPIO_PORTF_DATA_R &= (~RED&~GREEN&~BLUE) ;
 				delay(250000);
@@ -25,9 +29,15 @@ int main()
 				GPIO_PORTF_DATA_R=RED;
 				delay(250000);
 				GPIO_PORTF_DATA_R &= (~RED&~GREEN&~BLUE) ;
+<<<<<<< HEAD
 				delay(200000);
 			}
 			delay(400000);
+=======
+				delay(250000);
+			}
+			delay(500000);
+>>>>>>> ff37b92edd34908db2a08032ee9482c64bbe8f45
 	}
 }
 	
